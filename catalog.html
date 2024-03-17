@@ -36,10 +36,8 @@
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button button-all" href="#">Хочу сюда</a>
-          </li>
         </ul>
+        <a class="button button-all" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-inner" data-test="main">
@@ -104,8 +102,19 @@
                 </li>
               </ul>
             </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <label for="from">От</label>
+              <input type="text" id="from" value="0">
+
+              <label for="to">До</label>
+              <input type="text" id="to" value="9000">
+            </fieldset>
+
           <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit">Сбросить</button>
         </form>
+        <h2>Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярное</option>
@@ -236,9 +245,9 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Телефон</h2>
         <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
         </address>
-        <p>html. academy</p>
+        <img class="footer-logo" alt="Логотип htmlacademy." src="#">
       </section>
     </footer>
   </body>
