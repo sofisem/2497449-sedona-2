@@ -5,7 +5,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class = "navigation">
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" alt="Логотип Седона." src="#">
@@ -42,7 +42,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -56,7 +56,7 @@
       </header>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
@@ -120,7 +120,7 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
-        <ul class="hotel-list">
+        <ul class="hotel-list" data-test="catalog">
         <li class="hotel-card">
           <a class="hotel-card-link" href="product.html">
             <img class="hotel-card-image" src="#" alt="">
@@ -202,8 +202,8 @@
       <button class="button pagination-show-more" type="button">Показать ещё</button>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class = "subscribe">
+    <footer class="page-footer" data-test="footer">
+      <section class = "subscribe" data-test="subscribe">
         <h2>Подпишись на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 
